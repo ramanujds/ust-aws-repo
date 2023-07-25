@@ -86,6 +86,9 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<image>
+						<name>customer-app</name>
+					</image>
 				</configuration>
 			</plugin>
 		</plugins>
