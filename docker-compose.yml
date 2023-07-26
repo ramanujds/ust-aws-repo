@@ -9,8 +9,9 @@ services:
     
     product-ms:
         image: product-ms
-        ports: 
-            - "8100-8199:8100"
+        ports:
+          -  "8100-8110:8100"
+        restart: always
         environment: 
             EUREKA_HOST: eureka-server
         depends_on: 
@@ -20,8 +21,9 @@ services:
 
     cart-ms:
         image: cart-ms
-        ports: 
-            - "8200-8299:8200"
+        ports:
+          -  "8200-8210:8200"
+        restart: always
         environment: 
             EUREKA_HOST: eureka-server
         depends_on: 
