@@ -10,7 +10,7 @@ services:
     product-ms:
         image: product-ms
         ports:
-          -  "8100-8110:8100"
+          -  "8100:8100"
         restart: always
         environment: 
             EUREKA_HOST: eureka-server
@@ -22,7 +22,7 @@ services:
     cart-ms:
         image: cart-ms
         ports:
-          -  "8200-8210:8200"
+          -  "8200:8200"
         restart: always
         environment: 
             EUREKA_HOST: eureka-server
